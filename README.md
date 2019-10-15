@@ -1,6 +1,5 @@
 # Files Generator
-This script generates a set of text files according to the cases described in "testcases.txt".
-Further purpose is to analyze and compare the Similarity Algorithms (LSH, TLSH, SDHASH).
+This script generates a set of text files according to the cases described in "testcases.txt". <br /> Further purpose is to analyze and compare the Similarity Algorithms (LSH, TLSH, SDHASH).
 
 
 ### Parameters
@@ -18,3 +17,9 @@ SECTION_SIZE = size (number of words) of the section the files will be divided (
 ### Run
 
 python files_generator.py
+
+## Performed tests
+
+"input" directory contains 2 text files: metallica.txt and wikipedia.txt <br />
+"output" directory contains 21 generated file according to the cases from testcases.txt and the parameters from config.ini
+
