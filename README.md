@@ -25,3 +25,7 @@ python files_generator.py
 "input" directory contains 2 text files: metallica.txt and wikipedia.txt <br />
 "output" directory contains 21 generated file according to the cases from testcases.txt and the parameters from config.ini
 
+## Notes
+
+Some of the generated files don't contain endl's (e.g. scrambling words). To view the files, please use a text editor which can automatically structure the file with endlines (e.g. Sublime).
+
