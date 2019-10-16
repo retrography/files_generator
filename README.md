@@ -16,7 +16,7 @@ SECTION_SIZE = size (number of words) of the section the files will be divided (
 
 ### Run
 ```
-python files_generator.py <br />
+python files_generator.py
 ```
 (Python version 3.7.0)
 
