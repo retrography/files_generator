@@ -3,8 +3,8 @@ This script generates a set of text files according to the cases described in "t
 
 
 ### Parameters
-```
 config.ini file contains the following parameters:
+```
 input_location = directory where the input files are located
 output_location = directory of the generated files
 NR_WORDS_CUT: number of words to be cut from the file
