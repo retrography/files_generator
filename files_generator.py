@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import os
 import random
 import re
@@ -6,8 +8,8 @@ import configparser
 # Parameters:
 Config = configparser.ConfigParser()
 Config.read("config.ini")
-INPUT = Config.get('io','input_location')
-OUTPUT = Config.get('io','output_location')
+INPUT = Config.get('io','INPUT_LOCATION')
+OUTPUT = Config.get('io','OUTPUT_LOCATION')
 NR_WORDS_CUT = int(Config.get('parameters','NR_WORDS_CUT'))
 NR_LINES_CUT = int(Config.get('parameters','NR_LINES_CUT'))
 NR_WORDS_ADDED = int(Config.get('parameters','NR_WORDS_ADDED'))
@@ -37,7 +39,12 @@ class FilesGenerator:
 		with open(file_path, 'r') as f:
 			# print(f.read())
 			return f.read()
-
+            
+	def read_file(file_path):
+		with open(file_path, 'r') as f:
+			# print(f.read())
+			return f.read()
+            
 	def write_file(self, file_out_name, content):
 		with open(file_out_name, 'w') as f:
 			f.write(content)
