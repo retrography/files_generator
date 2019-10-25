@@ -20,7 +20,7 @@ class FilesGenerator:
 	content = {}
 	def __init__(self):
 		files_list = os.listdir(INPUT)
-		# print ("files_list: " + str(files_list))
+		print ("files_list: " + str(files_list))
 		self.file1 = os.path.join(INPUT,files_list[0])
 		self.filename1 = os.path.basename(self.file1.split(".")[0])
 
@@ -40,10 +40,10 @@ class FilesGenerator:
 			# print(f.read())
 			return f.read()
             
-	def read_file(file_path):
-		with open(file_path, 'r') as f:
-			# print(f.read())
-			return f.read()
+#	def read_file(file_path):
+#		with open(file_path, 'r') as f:
+#			# print(f.read())
+#			return f.read()
             
 	def write_file(self, file_out_name, content):
 		with open(file_out_name, 'w') as f:
